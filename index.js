@@ -7,7 +7,7 @@ const restService = express();
 restService.use(bodyParser.json());
 
 restService.post('/hook', function(req, res) {
-  var speech = "dummy";
+  var speech = req.body.name;
     return res.json({
         speech: speech,
         displayText: speech,
