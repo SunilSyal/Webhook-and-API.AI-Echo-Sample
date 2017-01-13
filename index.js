@@ -9,8 +9,8 @@ restService.use(bodyParser.json());
 restService.post('/hook', function(req, res) {
   //var speech = req.body.name;
     return res.json({
-        speech: req,
-        displayText: req,
+        speech: req.name,
+        displayText: req.name,
         source: 'webhook-sample'
     });
 });
