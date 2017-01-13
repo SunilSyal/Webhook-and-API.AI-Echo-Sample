@@ -7,10 +7,10 @@ const restService = express();
 restService.use(bodyParser.json());
 
 restService.post('/hook', function(req, res) {
-  var speech = req.body.name;
+  //var speech = req.body.name;
     return res.json({
-        speech: speech,
-        displayText: speech,
+        speech: req.body,
+        displayText: req.body,
         source: 'webhook-sample'
     });
 });
