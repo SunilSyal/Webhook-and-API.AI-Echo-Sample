@@ -1,0 +1,14 @@
+{
+  "name": "webhook-sample",
+  "version": "1.0.0",
+  "description": "Webhook sample",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Sunil Syal",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  }
+}
