@@ -13,7 +13,7 @@ restService.use(bodyParser.json());
 restService.post('/echo', function(req, res) {
   //var speech = req.body.name;
     return res.json({
-        speech: req.body.echoText,
+        speech: req.body.result.parameters.echoText,
         displayText: "dummmmmy",
         source: 'webhook-sample'
     });
