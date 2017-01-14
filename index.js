@@ -11,14 +11,13 @@ restService.use(bodyParser.urlencoded({
 restService.use(bodyParser.json());
 
 restService.post('/hook', function(req, res) {
-  //var speech = req.body.name;
+    //var speech = req.body.name;
     return res.json({
-      "resolvedQuery": "Search my calendar for events on April 23",
-      "action": "my-action",
-      "actionIncomplete": false,
-      "parameters": {
-        "date": "UUUU-04-23"
-      }
+        "speech": "Barack Hussein Obama II is the 44th and current President of the United States.",
+        "displayText": "Barack Hussein Obama II is the 44th and current President of the United States, and the first African American to hold the office. Born in Honolulu, Hawaii, Obama is a graduate of Columbia University   and Harvard Law School, where ",
+        "data": {},
+        "contextOut": [],
+        "source": "DuckDuckGo"
     });
 
 
