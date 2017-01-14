@@ -17,4 +17,11 @@ Open API.AI portal - https://api.ai
 - Create an account and login
 
 Watch this video for details.
+
 [![IMAGE ALT TEXT HERE](https://www.youtube.com/watch?v=6TQdwzztltc/0.jpg)](https://www.youtube.com/watch?v=6TQdwzztltc)
+
+[![IMAGE ALT TEXT HERE](https://www.youtube.com/watch?v=6TQdwzztltc/1.jpg)](https://www.youtube.com/watch?v=6TQdwzztltc)
+
+[![IMAGE ALT TEXT HERE](https://www.youtube.com/watch?v=6TQdwzztltc/2.jpg)](https://www.youtube.com/watch?v=6TQdwzztltc)
+
+[![IMAGE ALT TEXT HERE](https://www.youtube.com/watch?v=6TQdwzztltc/3.jpg)](https://www.youtube.com/watch?v=6TQdwzztltc)
