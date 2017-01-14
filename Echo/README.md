@@ -1,12 +1,18 @@
-# Api.ai - sample webhook implementation.
+# Echo your text using Webhook
 
-This is a really simple webhook implementation that gets Api.ai classification JSON (i.e. a JSON output of Api.ai /query endpoint) and returns a fulfillment response.
-
-More info about Api.ai webhooks could be found here:
-[Api.ai Webhook](https://docs.api.ai/docs/webhook)
+A very simple demo of implementing an echo service using webhook.
 
 # Deploy to:
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-# What does the service do?
-It's a simple echo service that takes `resolvedQuery` and `action` fields from the Api.ai JSON reponse and echoes them back in into `speech` and `displayTest` fields in the fulfillment JSON.
+# How it works?
+Push this app to Heroku
+Test the API XXXX - use www.hurl.it to test it
+
+Open API.AI portal - https://api.ai
+Create an account and login
+Create an agent
+Create two intents - Welcome and Echo
+Fulfillment - Webhook
+Integration - Actions on Google
+Autorize and test on Google Home simulator
