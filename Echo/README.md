@@ -10,9 +10,9 @@ A very simple demo of implementing an echo service using webhook.
 - Test the API XXXX - use www.hurl.it to test it
 
 Open API.AI portal - https://api.ai
-Create an account and login
-Create an agent
-Create two intents - Welcome and Echo
-Fulfillment - Webhook
-Integration - Actions on Google
-Autorize and test on Google Home simulator
+- Create an account and login
+- Create an agent
+- Create two intents - Welcome and Echo
+- Fulfillment - Webhook
+- Integration - Actions on Google
+- Autorize and test on Google Home simulator
