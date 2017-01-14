@@ -11,12 +11,9 @@ This simple app will help you understand
 
 # How it works?
 - Push this app to Heroku
-- Test the API XXXX - use www.hurl.it to test it
+- Test the API https://webhook-echo-sample.herokuapp.com/echo - use www.hurl.it to test it
 
 Open API.AI portal - https://api.ai
 - Create an account and login
-- Create an agent
-- Create two intents - Welcome and Echo
-- Fulfillment - Webhook
-- Integration - Actions on Google
-- Autorize and test on Google Home simulator
+
+Watch this video for details. 
