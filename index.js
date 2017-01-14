@@ -13,10 +13,15 @@ restService.use(bodyParser.json());
 restService.post('/hook', function(req, res) {
   //var speech = req.body.name;
     return res.json({
-        speech: req.body,
-        displayText: req.body,
-        source: 'webhook-sample'
+      "resolvedQuery": "Search my calendar for events on April 23",
+      "action": "my-action",
+      "actionIncomplete": false,
+      "parameters": {
+        "date": "UUUU-04-23"
+      }
     });
+
+
 });
 
 restService.listen((process.env.PORT || 8000), function() {
