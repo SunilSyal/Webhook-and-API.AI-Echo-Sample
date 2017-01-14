@@ -16,6 +16,7 @@ This simple app will help you understand
 Open API.AI portal - https://api.ai
 - Create an account and login
 
-Watch this video for details.
+# Video
+Watch this video to learn the steps to create sample application.
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/6TQdwzztltc/0.jpg)](https://www.youtube.com/watch?v=6TQdwzztltc)
