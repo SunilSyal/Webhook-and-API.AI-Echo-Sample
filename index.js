@@ -15,6 +15,7 @@ restService.post('/echo', function(req, res) {
     return res.json({
         speech: req.body.text,
         displayText: req.body.text,
+        displayTextSample: req.body,
         source: 'webhook-sample'
     });
 
