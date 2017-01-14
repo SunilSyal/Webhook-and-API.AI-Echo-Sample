@@ -1,7 +1,7 @@
 {
-  "name": "webhook-sample",
+  "name": "webhook-echo-sample",
   "version": "1.0.0",
-  "description": "Webhook sample",
+  "description": "Webhook echo sample",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
