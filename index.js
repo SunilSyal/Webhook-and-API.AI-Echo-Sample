@@ -41,12 +41,20 @@ restService.post('/slack-test', function(req, res) {
 
             "thumb_url": "https://stiltsoft.com/blog/wp-content/uploads/2016/01/5.jira_.png"
         }, {
-            "title": "Story status count",
+            "text": "Story status count",
             "color": "#f49e42",
 
             "fields": [{
                 "title": "Not started",
                 "value": "50",
+                "short": "false"
+            }, {
+                "title": "Development",
+                "value": "40",
+                "short": "false"
+            }, {
+                "title": "Development",
+                "value": "40",
                 "short": "false"
             }, {
                 "title": "Development",
