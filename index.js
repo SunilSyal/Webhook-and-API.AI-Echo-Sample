@@ -13,7 +13,7 @@ restService.use(bodyParser.json());
 
 restService.post('/echo', function(req, res) {
     var speech = req.body.result && req.body.result.parameters && req.body.result.parameters.echoText ? 
-    "ok I will assist you with the money transfer. Please " : 
+    "ok I will assist you with the money transfer. Please provide some info." : 
     "Seems like some problem. Speak again.";
     return res.json({
         speech: speech,
