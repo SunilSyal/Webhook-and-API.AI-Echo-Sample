@@ -19,4 +19,4 @@ Open DialogFlow portal - https://dialogflow.com/
 # Video
 Watch this video to learn the steps to create sample application.
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/6TQdwzztltc/0.jpg)](https://www.youtube.com/watch?v=6TQdwzztltc)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/VX7SSnvpj-8/0.jpg)](https://www.youtube.com/watch?v=VX7SSnvpj-8)
