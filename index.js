@@ -27,7 +27,7 @@ restService.post('/music', function(req, res) {
             speech = '<speak>  <audio src="https://actions.google.com/sounds/v1/ambiences/barnyard_with_animals.ogg">did not get your MP3 audio file</audio></speak>';
             break;
         case "delay":
-            speech = 'Let me take a break for 3 seconds. <break time="3s"/> I am back again.';
+            speech = '<speak>Let me take a break for 3 seconds. <break time="3s"/> I am back again.</speak>';
             break;
     }
     return res.json({
