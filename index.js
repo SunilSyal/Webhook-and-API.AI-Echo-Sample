@@ -21,9 +21,18 @@ restService.post('/echo', function(req, res) {
 });
 
 restService.post('/music', function(req, res) {
+    var speech = "";
+    switch (req.body.result.parameters.AudioSample.toLowerCase()) {
+        case "music":
+            speech = '<speak>  <audio src="https://actions.google.com/sounds/v1/ambiences/barnyard_with_animals.ogg">did not get your MP3 audio file</audio></speak>';
+            break;
+        case "delay":
+            speech = 'Let me take a break for 3 seconds. <break time="3s"/> I am back again.';
+            break;
+    }
     return res.json({
-        speech: '<speak>  <audio src="https://actions.google.com/sounds/v1/ambiences/barnyard_with_animals.ogg">did not get your MP3 audio file</audio></speak>',
-        displayText: '<speak>  <audio src="https://actions.google.com/sounds/v1/ambiences/barnyard_with_animals.ogg">did not get your MP3 audio file</audio></speak>',
+        speech: speech,
+        displayText: speech',
         source: 'webhook-echo-sample'
     });
 });
