@@ -22,8 +22,8 @@ restService.post('/echo', function(req, res) {
 
 restService.post('/music', function(req, res) {
     return res.json({
-        speech: '<speak>  <audio src="https://actions.google.com/sounds/v1/ambiences/barnyard_with_animals.ogg">didn't get your MP3 audio file</audio></speak>',
-        displayText: '<speak>  <audio src="https://actions.google.com/sounds/v1/ambiences/barnyard_with_animals.ogg">didn't get your MP3 audio file</audio></speak>',
+        speech: '<speak>  <audio src="https://actions.google.com/sounds/v1/ambiences/barnyard_with_animals.ogg">did not get your MP3 audio file</audio></speak>',
+        displayText: '<speak>  <audio src="https://actions.google.com/sounds/v1/ambiences/barnyard_with_animals.ogg">did not get your MP3 audio file</audio></speak>',
         source: 'webhook-echo-sample'
     });
 });
