@@ -108,7 +108,7 @@ restService.post("/audio", function(req, res) {
         '<speak><say-as interpret-as="telephone" format="1">(781) 771-7777</say-as> </speak>';
       break;
     // https://www.w3.org/TR/2005/NOTE-ssml-sayas-20050526/#S3.3
-    case "alias":
+    case "alternate":
       speech =
         '<speak>IPL stands for <sub alias="indian premier league">IPL</sub></speak>';
       break;
