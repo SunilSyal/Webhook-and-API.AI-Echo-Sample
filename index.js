@@ -27,7 +27,7 @@ restService.post("/echo", function(req, res) {
   });
 });
 
-restService.post("/music", function(req, res) {
+restService.post("/audio", function(req, res) {
   var speech = "";
   switch (req.body.result.parameters.AudioSample.toLowerCase()) {
     case "music one":
