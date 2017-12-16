@@ -30,6 +30,7 @@ restService.post("/echo", function(req, res) {
 restService.post("/audio", function(req, res) {
   var speech = "";
   switch (req.body.result.parameters.AudioSample.toLowerCase()) {
+    //Speech Synthesis Markup Language 
     case "music one":
       speech =
         '<speak><audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
