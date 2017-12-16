@@ -39,12 +39,10 @@ restService.post("/music", function(req, res) {
         '<speak>Let me take a break for 3 seconds. <break time="3s"/> I am back again.</speak>';
       break;
     case "cardinal":
-      speech =
-        '<speak><say-as interpret-as="cardinal">12345</say-as></speak>';
+      speech = '<speak><say-as interpret-as="cardinal">12345</say-as></speak>';
       break;
     case "ordinal":
-      speech =
-        '<speak><say-as interpret-as="ordinal">10</say-as></speak>';
+      speech = '<speak><say-as interpret-as="ordinal">10</say-as></speak>';
       break;
     case "delay":
       speech =
@@ -54,49 +52,48 @@ restService.post("/music", function(req, res) {
       speech =
         '<speak><say-as interpret-as="characters">Hello</say-as></speak>';
       break;
-    case "W3C":
-      speech =
-        '<speak><say-as interpret-as="fraction">24+3/4</say-as></speak>';
-      break;
-    case "W3C":
-      speech =
-        '<speak>Let me take a break for 3 seconds. <break time="3s"/> I am back again.</speak>';
-      break;
-    case "W3C":
-      speech =
-        '<speak>Let me take a break for 3 seconds. <break time="3s"/> I am back again.</speak>';
-      break;
-    case "W3C":
-      speech =
-        '<speak>Let me take a break for 3 seconds. <break time="3s"/> I am back again.</speak>';
-      break;
     case "fraction":
+      speech = '<speak><say-as interpret-as="fraction">24+3/4</say-as></speak>';
+      break;
+    case "W3C":
       speech =
         '<speak>Let me take a break for 3 seconds. <break time="3s"/> I am back again.</speak>';
       break;
     case "expletive":
       speech =
-        '<speak>Let me take a break for 3 seconds. <break time="3s"/> I am back again.</speak>';
+        '<speak>I do not want to say <say-as interpret-as="expletive">F&%$#</say-as> word</speak>';
       break;
     case "unit":
       speech =
-        '<speak>Let me take a break for 3 seconds. <break time="3s"/> I am back again.</speak>';
+        '<speak>This road is <say-as interpret-as="unit">50 foot</say-as> wide</speak>';
       break;
     case "verbatim":
       speech =
-        '<speak>Let me take a break for 3 seconds. <break time="3s"/> I am back again.</speak>';
+        '<speak>You spell HELLO as <say-as interpret-as="verbatim">hello</say-as></speak>';
       break;
-    case "date":
+    case "date one":
       speech =
-        '<speak>Let me take a break for 3 seconds. <break time="3s"/> I am back again.</speak>';
+        '<speak>Today is <say-as interpret-as="date" format="yyyymmdd" detail="1">2017-12-16</say-as></speak>';
+      break;
+    case "date two":
+      speech =
+        '<speak>Today is <say-as interpret-as="date" format="dm" detail="1">16-12</say-as></speak>';
+      break;
+    case "date three":
+      speech =
+        '<speak>Today is <say-as interpret-as="date" format="dmy" detail="1">16-12-2017</say-as></speak>';
       break;
     case "time":
       speech =
-        '<speak>Let me take a break for 3 seconds. <break time="3s"/> I am back again.</speak>';
+        '<speak>It is <say-as interpret-as="time" format="hms12">2:30pm</say-as> now</speak>';
+      break;
+    case "telephone":
+      speech =
+        '<speak><say-as interpret-as="telephone" format="91">09012345678</say-as> </speak>';
       break;
     case "alias":
       speech =
-        '<speak>Let me take a break for 3 seconds. <break time="3s"/> I am back again.</speak>';
+        '<speak>IPL stands for <sub alias="indian premier league">IPL</sub></speak>';
       break;
   }
   return res.json({
