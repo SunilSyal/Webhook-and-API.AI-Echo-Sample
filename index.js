@@ -71,9 +71,9 @@ restService.post("/audio", function(req, res) {
       speech =
         '<speak>Rather than saying 24+3/4, I should say <say-as interpret-as="fraction">24+3/4</say-as></speak>';
       break;
-    case "bleep":
+    case "expletive":
       speech =
-        '<speak>I do not want to say <say-as interpret-as="bleep">F&%$#</say-as> word</speak>';
+        '<speak>I do not want to say <say-as interpret-as="expletive">F&%$#</say-as> word</speak>';
       break;
     case "unit":
       speech =
