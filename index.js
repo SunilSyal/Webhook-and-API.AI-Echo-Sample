@@ -42,7 +42,8 @@ restService.post("/music", function(req, res) {
       speech = '<speak><say-as interpret-as="cardinal">12345</say-as></speak>';
       break;
     case "ordinal":
-      speech = '<speak>I stood <say-as interpret-as="ordinal">10</say-as> in the class exams.</speak>';
+      speech =
+        '<speak>I stood <say-as interpret-as="ordinal">10</say-as> in the class exams.</speak>';
       break;
     case "characters":
       speech =
@@ -50,10 +51,6 @@ restService.post("/music", function(req, res) {
       break;
     case "fraction":
       speech = '<speak><say-as interpret-as="fraction">24+3/4</say-as></speak>';
-      break;
-    case "W3C":
-      speech =
-        '<speak>Let me take a break for 3 seconds. <break time="3s"/> I am back again.</speak>';
       break;
     case "expletive":
       speech =
@@ -83,9 +80,13 @@ restService.post("/music", function(req, res) {
       speech =
         '<speak>It is <say-as interpret-as="time" format="hms12">2:30pm</say-as> now</speak>';
       break;
-    case "telephone":
+    case "telephone one":
       speech =
         '<speak><say-as interpret-as="telephone" format="91">09012345678</say-as> </speak>';
+      break;
+    case "telephone two":
+      speech =
+        '<speak><say-as interpret-as="telephone" format="1">(781) 771-7777</say-as> </speak>';
       break;
     case "alias":
       speech =
