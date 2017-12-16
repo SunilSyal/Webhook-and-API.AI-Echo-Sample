@@ -73,7 +73,7 @@ restService.post("/audio", function(req, res) {
       break;
     case "expletive":
       speech =
-        '<speak>I do not want to say <say-as interpret-as="expletive">F&%$#</say-as> word</speak>';
+        '<say-as interpret-as="expletive">censor this</say-as>';
       break;
     case "unit":
       speech =
