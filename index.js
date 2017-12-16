@@ -44,13 +44,9 @@ restService.post("/music", function(req, res) {
     case "ordinal":
       speech = '<speak>I stood <say-as interpret-as="ordinal">10</say-as> in the class exams.</speak>';
       break;
-    case "delay":
-      speech =
-        '<speak>Let me take a break for 3 seconds. <break time="3s"/> I am back again.</speak>';
-      break;
     case "characters":
       speech =
-        '<speak><say-as interpret-as="characters">Hello</say-as></speak>';
+        '<speak>Hello is spelled as <say-as interpret-as="characters">Hello</say-as></speak>';
       break;
     case "fraction":
       speech = '<speak><say-as interpret-as="fraction">24+3/4</say-as></speak>';
