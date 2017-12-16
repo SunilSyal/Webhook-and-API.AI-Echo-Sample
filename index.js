@@ -30,14 +30,23 @@ restService.post("/echo", function(req, res) {
 restService.post("/music", function(req, res) {
   var speech = "";
   switch (req.body.result.parameters.AudioSample.toLowerCase()) {
-    case "music":
+    case "music one":
       speech =
-        '<speak>  <audio src="https://actions.google.com/sounds/v1/ambiences/barnyard_with_animals.ogg">did not get your MP3 audio file</audio></speak>';
+        '<speak><audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
+      break;
+    case "music two":
+      speech =
+        '<speak><audio repeatCount="2" clipBegin="2" clipEnd="4" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
+      break;
+    case "music three":
+      speech =
+        '<speak><audio speed="200%" soundLevel="-5db" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
       break;
     case "delay":
       speech =
         '<speak>Let me take a break for 3 seconds. <break time="3s"/> I am back again.</speak>';
       break;
+    //https://www.w3.org/TR/speech-synthesis/#S3.2.3
     case "cardinal":
       speech = '<speak><say-as interpret-as="cardinal">12345</say-as></speak>';
       break;
@@ -88,6 +97,7 @@ restService.post("/music", function(req, res) {
       speech =
         '<speak><say-as interpret-as="telephone" format="1">(781) 771-7777</say-as> </speak>';
       break;
+    // https://www.w3.org/TR/2005/NOTE-ssml-sayas-20050526/#S3.3
     case "alias":
       speech =
         '<speak>IPL stands for <sub alias="indian premier league">IPL</sub></speak>';
