@@ -46,6 +46,10 @@ restService.post("/audio", function(req, res) {
       speech =
         '<speak><audio speed="200%" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
       break;
+    case "music five":
+      speech =
+        '<audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio>';
+      break;
     case "delay":
       speech =
         '<speak>Let me take a break for 3 seconds. <break time="3s"/> I am back again.</speak>';
@@ -63,7 +67,8 @@ restService.post("/audio", function(req, res) {
         '<speak>Hello is spelled as <say-as interpret-as="characters">Hello</say-as></speak>';
       break;
     case "fraction":
-      speech = '<speak>Rather than saying 24+3/4, I should say <say-as interpret-as="fraction">24+3/4</say-as></speak>';
+      speech =
+        '<speak>Rather than saying 24+3/4, I should say <say-as interpret-as="fraction">24+3/4</say-as></speak>';
       break;
     case "bleep":
       speech =
