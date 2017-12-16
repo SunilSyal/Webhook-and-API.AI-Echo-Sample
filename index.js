@@ -63,7 +63,7 @@ restService.post("/music", function(req, res) {
         '<speak>Hello is spelled as <say-as interpret-as="characters">Hello</say-as></speak>';
       break;
     case "fraction":
-      speech = 'Rather than saying 24+3/4, I should say <speak><say-as interpret-as="fraction">24+3/4</say-as></speak>';
+      speech = '<speak>Rather than saying 24+3/4, I should say <say-as interpret-as="fraction">24+3/4</say-as></speak>';
       break;
     case "expletive":
       speech =
