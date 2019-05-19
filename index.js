@@ -15,18 +15,19 @@ restService.use(bodyParser.json());
 
 restService.post("/echo", function(req, res) {
   var temp = {
-    "google": {
-      "expectUserResponse": true,
-      "richResponse": {
-        "items": [
+    google: {
+      expectUserResponse: true,
+      richResponse: {
+        items: [
           {
-            "simpleResponse": {
-              "textToSpeech": "this is a simple response"
+            simpleResponse: {
+              textToSpeech: "this is a simple response"
             }
           }
         ]
       }
-    };
+    }
+  };
   var speech =
     req.body.queryResult &&
     req.body.queryResult.parameters &&
