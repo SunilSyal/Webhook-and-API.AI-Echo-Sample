@@ -23,7 +23,7 @@ restService.post("/echo", function(req, res) {
   
   var speechResponse = {
     google: {
-      expectUserResponse: true,
+      expectUserResponse: false,
       richResponse: {
         items: [
           {
@@ -38,7 +38,7 @@ restService.post("/echo", function(req, res) {
   
   return res.json({
     payload: speechResponse,
-    data: speechResponse,
+    //data: speechResponse,
     fulfillmentText: "Sample text response",
     speech: speech,
     displayText: speech,
