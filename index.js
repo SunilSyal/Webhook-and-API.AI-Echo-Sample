@@ -21,7 +21,7 @@ restService.post("/echo", function(req, res) {
         items: [
           {
             simpleResponse: {
-              textToSpeech: "this is a simple response"
+              textToSpeech: "this is a simple response" + req.body.queryResult.parameters.echoText
             }
           }
         ]
