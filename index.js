@@ -132,8 +132,7 @@ restService.post("/audio", function(req, res) {
         '<speak>IPL stands for <sub alias="indian premier league">IPL</sub></speak>';
       break;
     case "radio":
-      speech =
-        '<audio src="https://air.pc.cdn.bitgravity.com/air/live/pbaudio001/playlist.m3u8">did not get your audio file</audio>';
+        speech ='<video controls src="https://air.pc.cdn.bitgravity.com/air/live/pbaudio001/playlist.m3u8">'
       break;
   }
   return res.json({
