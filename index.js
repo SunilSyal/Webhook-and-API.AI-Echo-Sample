@@ -15,8 +15,8 @@ restService.use(bodyParser.json());
 
 restService.get('/test', function (req, res) {
   var resObj = {
-    req.headers.origin,
-    req.headers.host
+    org : req.headers.origin,
+    host: req.headers.host
   }
     
   res.end( resObj );
