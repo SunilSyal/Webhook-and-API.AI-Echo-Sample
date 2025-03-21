@@ -15,7 +15,7 @@ restService.use(bodyParser.json());
 
 restService.get('/test', function (req, res) {
     
-      res.end( "ok );
+      res.end( "ok" );
     
 })
 
