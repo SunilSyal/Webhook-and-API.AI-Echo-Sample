@@ -19,7 +19,7 @@ restService.get('/test', function (req, res) {
     host: req.headers.host
   }
     
-  res.end( req.get('origin') );
+  res.end( JSON.stringify(req) );
     
 })
 
