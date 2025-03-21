@@ -19,7 +19,7 @@ restService.get('/test', function (req, res) {
     host: req.headers.host
   }
     
-  res.end( resObj );
+  res.end( resObj.toString() );
     
 })
 
