@@ -24,7 +24,6 @@ restService.use(function (req, res, next) {
   // Website you wish to allow to connect
   res.setHeader(
     "Access-Control-Allow-Origin",
-    "https://localhost:8888",
     "https://mathemafia.com",
     "http://mathemafia.com"
   );
