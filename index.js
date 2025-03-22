@@ -35,7 +35,7 @@ restService.use(function (req, res, next) {
   next();
 });
 
-restService.get("/test", function (req, res) {
+restService.get("/test1", function (req, res) {
   var resObj = {
     org: req.headers.origin,
     host: req.headers.host,
