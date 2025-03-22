@@ -4,6 +4,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 
 const restService = express();
+const cors = require('cors');
 
 const corsOptions = {
   origin: ['https://mathemafia.com', 'http://yourdomain2.com'],
