@@ -5,6 +5,12 @@ const bodyParser = require("body-parser");
 
 const restService = express();
 
+const corsOptions = {
+  origin: ['http://yourdomain1.com', 'http://yourdomain2.com'],
+};
+
+restService.use(cors(corsOptions));
+
 restService.use(
   bodyParser.urlencoded({
     extended: true
